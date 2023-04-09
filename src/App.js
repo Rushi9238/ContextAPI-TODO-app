@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { createContext, useState } from 'react'
+import InputBox from './Componets/InputBox';
+import OutputBox from './Componets/OutputBox';
 
+export const GlobalContext=createContext();
 function App() {
+  // console.log('hello');
+const[currList,setCurrList]=useState([]);
+const [currValue,setCurrValue]=useState('');
+const [edit,setEdit]=useState(0)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <GlobalContext.Provider value={{currList,setCurrList,currValue,setCurrValue,edit,setEdit}}>
+     <div className='mainConteiner'>
+      <InputBox/>
+      <OutputBox/>
+     </div>
+   </GlobalContext.Provider>
     </div>
   );
 }

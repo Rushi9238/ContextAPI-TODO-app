@@ -1,0 +1,23 @@
+.outbox{
+    border: 2px solid red;
+    height: 90%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.result{
+    border: 2px solid green;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.result h2{
+    width: 50%;
+    border: 2px solid blue;
+}
+.result button{
+    height: 80%;
+    width: 10%;
+}

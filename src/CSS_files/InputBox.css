@@ -1,0 +1,15 @@
+.inputdiv{
+    border: 2px solid red;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputdiv input{
+    height: 90%;
+    width: 60%;
+}
+.inputdiv button{
+    height: 90%;
+    width: 10%;
+}
