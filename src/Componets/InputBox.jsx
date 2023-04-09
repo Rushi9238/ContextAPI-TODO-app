@@ -11,14 +11,7 @@ const InputBox = () => {
         <input type="text" name="" id="" value={currValue} onChange={(e)=>{
             setCurrValue(e.target.value)
         }} />
-        {/* <button onClick={()=>{
-           
-          if(currValue !== ''){
-            setCurrList([...currList,{currValue:currValue,id:`${currValue}${Date.now()}`}])
-            setCurrValue('')
-          }
-
-        }}>click</button> */}
+        
         {edit? <button onClick={()=>{
           const editValue=currList.filter((ele)=>{
             return ele.id === edit
@@ -26,7 +19,7 @@ const InputBox = () => {
           // console.log(editValue);
           // console.log(currList);
           const finalEdit=currList.map((e)=>
-           e.id===editValue.id ? (e={id:e.id,currValue:e.currValue}):{id:e.id,currValue}
+          edit===e.id ? (e={id:e.id,currValue}):{id:e.id,currValue:e.currValue}
           )
           console.log(finalEdit);
           setCurrList(finalEdit)
