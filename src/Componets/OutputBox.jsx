@@ -28,7 +28,7 @@ const OutputBox = () => {
         {currList.map((e,i)=>{
             return<>
             <div key={i} className='result'>
-                <input type="checkbox" name="" id="" />
+                <input type="checkbox" name="" id="checkbox1" />
                 <h2>{e.currValue}</h2>
                 <button onClick={()=>{
                     editHandeler(e.id)

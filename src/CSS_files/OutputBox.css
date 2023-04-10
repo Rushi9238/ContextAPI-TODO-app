@@ -3,21 +3,36 @@
     height: 90%;
     width: 100%;
     overflow-y: scroll;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
 }
 .result{
-    border: 2px solid green;
-    width: 100%;
+    /* border: 2px solid green; */
+    width: 90%;
     height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 1rem;
+    margin-top: 1rem;
+    background-color: darkseagreen;
+    border-radius: 50px;
+}
+ #checkbox1{
+    width: 20px;
+    height: 20px;
 }
 .result h2{
     width: 50%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    color: white;
 }
 .result button{
     height: 80%;
     width: 10%;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    outline: none;
 }

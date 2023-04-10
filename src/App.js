@@ -11,6 +11,7 @@ const [currValue,setCurrValue]=useState('');
 const [edit,setEdit]=useState(0)
   return (
     <div className="App">
+      <h1>TODO APP</h1>
        <GlobalContext.Provider value={{currList,setCurrList,currValue,setCurrValue,edit,setEdit}}>
      <div className='mainConteiner'>
       <InputBox/>
