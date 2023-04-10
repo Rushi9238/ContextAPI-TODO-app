@@ -1,13 +1,18 @@
 .inputdiv{
     /* border: 2px solid red; */
     height: 10%;
+    width: 80%;
     display: flex;
+    /* margin-left: 4rem; */
+    margin: .5rem 4rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
 }
 .inputdiv input{
     height: 90%;
-    width: 60%;
+    width: 70%;
     border: none;
     border-bottom:2px solid black;
     outline: none;
@@ -19,6 +24,9 @@
     z-index: 100;
 }
 .inputdiv button{
-    height: 90%;
-    width: 10%;
+    height: 80%;
+    width: 15%;
+    background: transparent;
+    outline: none;
+    /* border: none; */
 }
