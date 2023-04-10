@@ -1,20 +1,21 @@
-.inputdiv{
+.inputdiv {
     /* border: 2px solid red; */
     height: 10%;
     width: 80%;
     display: flex;
     /* margin-left: 4rem; */
-    margin: .5rem 4rem;
+    margin: 1rem 0rem;
     align-items: center;
     justify-content: space-around;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px black;
+    box-shadow:inset 2px 2px 5px black;
 }
-.inputdiv input{
+
+.inputdiv input {
     height: 90%;
     width: 70%;
     border: none;
-    border-bottom:2px solid black;
+    border-bottom: 2px solid black;
     outline: none;
     margin-right: .5rem;
     background: transparent;
@@ -23,10 +24,48 @@
     /* box-shadow: 0 0 4px black; */
     z-index: 100;
 }
-.inputdiv button{
+
+.inputdiv button {
     height: 80%;
     width: 15%;
     background: transparent;
     outline: none;
     /* border: none; */
+}
+
+@media only screen and (min-width:560px) and (max-width:768px) {
+    .inputdiv {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width:319px) and (max-width:560px) {
+    .inputdiv {
+        width: 95%;
+        height: 8%;
+    }
+
+    .inputdiv input {
+        height: 80%;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:318px) {
+    .inputdiv {
+        width: 95%;
+        height: 8%;
+    }
+
+    .inputdiv input {
+        height: 80%;
+        width: 55%;
+        font-size: 1.2rem;
+    }
+
+    .inputdiv button {
+        height: 70%;
+        width: 20%;
+        font-size: .9rem;
+    }
 }
